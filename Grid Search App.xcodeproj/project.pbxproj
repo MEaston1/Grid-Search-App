@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		CDF32CF42520A246006C7E1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF32CF32520A246006C7E1F /* ContentView.swift */; };
 		CDF32CF62520A247006C7E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF32CF52520A247006C7E1F /* Assets.xcassets */; };
 		CDF32CF92520A247006C7E1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF32CF82520A247006C7E1F /* Preview Assets.xcassets */; };
+		CDF32D03252128E2006C7E1F /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CDF32D02252128E2006C7E1F /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF32D03252128E2006C7E1F /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "Grid Search App";
+			packageProductDependencies = (
+				CDF32D02252128E2006C7E1F /* KingfisherSwiftUI */,
+			);
 			productName = "Grid Search App";
 			productReference = CDF32CEE2520A246006C7E1F /* Grid Search App.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = CDF32CE52520A246006C7E1F;
+			packageReferences = (
+				CDF32D01252128E2006C7E1F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CDF32CEF2520A246006C7E1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDF32D01252128E2006C7E1F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDF32D02252128E2006C7E1F /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDF32D01252128E2006C7E1F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDF32CE62520A246006C7E1F /* Project object */;
 }
